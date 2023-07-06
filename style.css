@@ -13,18 +13,52 @@ header{
     border: 1px solid #000;
     margin: auto;
 }
+ header nav{
+    width: 95%;
+    height: 7%;
+    border: 1 px solid #000;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ header nav ul{
+    list-style: none;
+    display: flex;
+    
+ } 
 
 
+header nav ul li {
+    padding: 3px 15px;
+}
+
+ header nav ul li:nth-last-child(1){
+    background:#000;
+    border-radius: 20px;
+    padding: 5px 20px;
+    
+ }
 
 
+ header nav ul li:nth-last-child(1)a{
+    color: #fff;
+    
+ }
 
 
+ header nav ul li a{
+    text-decoration: none;
+    color:#121213;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 3s linear;
+ } 
 
-
-
-
-
-
+ header nav ul li a:hover{
+    color: gray;
+ } 
 
 
 .offers{
