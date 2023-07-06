@@ -64,7 +64,7 @@ header nav ul li {
 .offers{
     width: 60%;
     height: auto;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin-top: 100px;
     margin: auto;
 }
@@ -85,13 +85,15 @@ header nav ul li {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+    flex-wrap: wrap ;
 }
 .offers .cards .card {
     position: relative;
     width: 200px;
     height: 350px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+    margin: 10px;
 }
 .offers .cards .card h3{
     width: 140px;
@@ -139,11 +141,68 @@ header nav ul li {
  }
 
  .offers .cards .card .cont_bx{
-    width: 100%;
+    width: 99%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #000;
+    border: 1px solid rgb(182, 182, 182);
     padding: 5px 0px;
     border-radius: 0px 0px 5px 5px;
  }
+ .offers .cards .card .cont_bx .price,.days{
+    margin: 0px 8px;
+ }
+ .offers .cards .card .cont_bx .price .heart_chat{
+    /* color: red; */
+    display: flex;
+    align-items: center;
+ }
+ .offers .cards .card .cont_bx .price .heart_chat i:nth-child(1){
+    color: red;
+    font-size: 12px;
+    margin-left: 3px;
+    font-style: normal;
+ }
+ .offers .cards .card .cont_bx .price .heart_chat i span{
+    color: #000;
+    font-size: 13px;
+    margin-right: 10 px;
+ }
+ .offers .cards .card .cont_bx .price .heart_chat i:nth-child(2){
+    color: rgb(112, 196, 229);
+    font-size: 13px;
+    margin-right: 10px;
+ }
+ .offers .cards .card .cont_bx .price .info_price{
+   display: flex;
+   align-items: center;
+   margin-top: 3px;
+ }
+ .offers .cards .card .cont_bx .price .info_price a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 11px;
+    transition: .3s linear;
+    margin-right: 13px;
+  }
+  .offers .cards .card .cont_bx .price .info_price a:hover{
+    color: gray;
+  }
+  .offers .cards .card .cont_bx .price .info_price h4{
+    margin: 0;
+    font-size: 13px;
+  }
+  .offers .cards .card .cont_bx  .days{
+    color: #fff;
+    background: #000;
+    font-size: 8px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s linear;
+  }
+  .offers .cards .card .cont_bx  .days:hover{
+    transform: rotate(360deg);
+  }
